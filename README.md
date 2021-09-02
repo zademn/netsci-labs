@@ -6,8 +6,8 @@
 2. Some math: Probabilities, statistics and linear algebra
 3. Graph theory – data structures
 
-## Split
-Part 1. Labs 1-5 -- Traditional generative methods, community detection.
+## Split  
+Part 1. Labs 1-5 -- Traditional generative methods, community detection.  
 Part 2 -- ML on graphs
 
 ## Environment
@@ -31,5 +31,8 @@ Stanford course -- Big recommendation
 Graph representation learning – William hamilton 2020
 
 [A new kind of science – Stephen Wolfram](https://www.wolframscience.com/nks/)
+
+
+[Networks, Crowds, and Markets: Reasoning About a Highly Connected World -- By David Easley and Jon Kleinberg)](http://www.cs.cornell.edu/home/kleinber/networks-book/)
 
 
