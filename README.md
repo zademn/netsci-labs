@@ -8,10 +8,12 @@
 
 ## Split  
 Part 1. Labs 1-5 -- Traditional generative methods, community detection.  
-Part 2 -- ML on graphs
+Part 2 -- ML on graphs -- Embeddings
 
 ## Environment
 Either make an anaconda env or a venv and install the requirements (Please do this before the lab)
+
+Some libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
 
 ## Datasets
 [Stanford's Snap](http://snap.stanford.edu/data/index.html)
