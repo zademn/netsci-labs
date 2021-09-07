@@ -37,4 +37,10 @@ Graph representation learning – William hamilton 2020
 
 [Networks, Crowds, and Markets: Reasoning About a Highly Connected World -- By David Easley and Jon Kleinberg)](http://www.cs.cornell.edu/home/kleinber/networks-book/)
 
+## TODO 
+Stuff that I need to finish (not exhaustive)
+- [ ] Add some real world intuition
+- [ ] Finish stats recap
+- [ ] Add markov processes to stats recap
+- [ ] Random walk with probability matrices
 
