@@ -4,7 +4,10 @@ import scipy
 import itertools
 import os, sys
 import random
-
+import urllib.request
+import io
+import zipfile
+import pandas as pd
 
 def average_shortest_path_length_sampled(G, n_samples=500):
     G0 = giant_component(G)
@@ -65,4 +68,40 @@ def communities_to_dict(communities):
 def dict_to_communities(d):
     """ Transforms a dict from node: community to a communities where each set is a community of nodes [{}, {}]"""
     return [{u for u, si in d.items() if si == s } for s in np.unique(list(d.values()))]
+    
+
+
+def load_graph(name):
+    if name == "cora":
+        # Load cora
+        G_cora =  nx.read_weighted_edgelist(os.path.join('..', 'data', 'cora.edges'), delimiter=',')
+        df = pd.read_csv(os.path.join('..', 'data', 'cora.node_labels'), delimiter=',', names = ['nodes', 'label'])
+        d = {str(k): {'label': v} for k, v in zip(df['nodes'], df['label'])}
+        nx.set_node_attributes(G_cora, d)
+
+        G_cora = giant_component(G_cora)
+        print(G_cora)
+
+        G_cora = nx.relabel_nodes(G_cora, {k: v for k, v in zip(G_cora.nodes,range(len(G_cora.nodes)))})
+        
+        return G_cora
+     
+    if name == "football":
+        url = "http://www-personal.umich.edu/~mejn/netdata/football.zip"
+
+        sock = urllib.request.urlopen(url)  # open URL
+        s = io.BytesIO(sock.read())  # read into BytesIO "file"
+        sock.close()
+
+        zf = zipfile.ZipFile(s)  # zipfile object
+        txt = zf.read("football.txt").decode()  # read info file
+        gml = zf.read("football.gml").decode()  # read gml data
+        # throw away bogus first line with # from mejn files
+        gml = gml.split("\n")[1:]
+        G_football = nx.parse_gml(gml)  # parse gml data
+        G_football = nx.relabel_nodes(G_football, {k: v for k, v in zip(G_football.nodes,range(len(G_football.nodes)))})
+        return G_football
+    else:
+        raise Exception("Graph not found")
+        
     

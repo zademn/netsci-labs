@@ -34,8 +34,9 @@ Graph representation learning – William hamilton 2020
 
 [A new kind of science – Stephen Wolfram](https://www.wolframscience.com/nks/)
 
-
 [Networks, Crowds, and Markets: Reasoning About a Highly Connected World -- By David Easley and Jon Kleinberg)](http://www.cs.cornell.edu/home/kleinber/networks-book/)
+
+[GNNPapers](https://github.com/thunlp/GNNPapers#survey-papers)
 
 ## TODO 
 Stuff that I need to finish (not exhaustive)
