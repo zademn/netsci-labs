@@ -1,5 +1,8 @@
 # Network science 2021
 
+**Note**
+- [nbviewer](https://nbviewer.jupyter.org/github/zademn/netsci-labs/tree/master/) might have prettier math and image rendering than github
+
 ## Prerequisites 
 
 1. Programming: OOP, being able to read and change functions to do something else.
@@ -8,7 +11,7 @@
 
 ## Split  
 Part 1. Labs 1-5 -- Traditional generative methods, community detection.  
-Part 2 -- ML on graphs -- Embeddings
+Part 2 -- ML on graphs -- Embeddings, Classification, GNNs
 
 ## Environment
 Either make an anaconda env or a venv and install the requirements (Please do this before the lab)
