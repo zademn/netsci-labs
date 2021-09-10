@@ -44,7 +44,7 @@ Graph representation learning – William hamilton 2020
 ## TODO 
 Stuff that I need to finish (not exhaustive)
 - [ ] Add some real world intuition
-- [ ] Finish stats recap
-- [ ] Add markov processes to stats recap
-- [ ] Random walk with probability matrices
+- [x] Finish probabilities recap
+- [x] Add markov chains to probabilities recap
+- [ ] Random walk with stochastic matrices
 
