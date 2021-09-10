@@ -33,13 +33,16 @@ Stanford course -- Big recommendation
 
 [A Course in network science](http://www.leonidzhukov.net/hse/2021/networks/)
 
-Graph representation learning – William hamilton 2020
+[Graph representation learning – William hamilton 2020](https://www.cs.mcgill.ca/~wlh/grl_book/)
 
 [A new kind of science – Stephen Wolfram](https://www.wolframscience.com/nks/)
 
 [Networks, Crowds, and Markets: Reasoning About a Highly Connected World -- By David Easley and Jon Kleinberg)](http://www.cs.cornell.edu/home/kleinber/networks-book/)
 
 [GNNPapers](https://github.com/thunlp/GNNPapers#survey-papers)
+
+**Note**  
+Most photos are taken from the above resources or the extra resources linked in the notebooks
 
 ## TODO 
 Stuff that I need to finish (not exhaustive)
