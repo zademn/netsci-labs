@@ -21,7 +21,9 @@ Some libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
 ## Datasets
 [Stanford's Snap](http://snap.stanford.edu/data/index.html)
 
-http://networkrepository.com/
+[Network Repository](http://networkrepository.com/)
+
+[Open Graph Benchmark](https://ogb.stanford.edu/), [ogb paper](https://arxiv.org/pdf/2005.00687.pdf)
 
 ## Books and courses
 
