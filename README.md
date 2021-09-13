@@ -30,7 +30,7 @@ Some libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
 [Network science – Albert-Laszlo Barabasi](http://networksciencebook.com/)
 
 Stanford course -- Big recommendation
-- [Jure leskovec yt playlist](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
+- [yt playlist - Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
 - [stanford cs224w – Jure Leskovec](https://web.stanford.edu/class/cs224w/)
 
 [A Course in network science](http://www.leonidzhukov.net/hse/2021/networks/)
