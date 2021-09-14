@@ -17,6 +17,6 @@ def print_data(data):
     if hasattr(data, 'train_mask'):
         print(f'Number of training nodes: {data.train_mask.sum()}')
         print(f'Training node label rate: {int(data.train_mask.sum()) / data.num_nodes:.2f}')
-    print(f'Contains isolated nodes: {data.contains_isolated_nodes()}')
-    print(f'Contains self-loops: {data.contains_self_loops()}')
+    print(f'Contains isolated nodes: {data.has_isolated_nodes()}')
+    print(f'Contains self-loops: {data.has_self_loops()}')
     print(f'Is undirected: {data.is_undirected()}')
