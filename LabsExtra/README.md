@@ -6,4 +6,4 @@ Some extra labs that I want to make
 - [ ] PageRank
 - [ ] Link Prediction
 - [ ] Knowledge graphs
-
+- [ ] Network motifs

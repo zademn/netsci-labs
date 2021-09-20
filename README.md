@@ -16,16 +16,21 @@ Part 2 -- ML on graphs -- Embeddings, Classification, GNNs
 ## Environment
 Either make an anaconda env or a venv and install the requirements (Please do this before the lab)
 
-Some libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
+Some of the used libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
 
 ## Datasets
+
 [Stanford's Snap](http://snap.stanford.edu/data/index.html)
 
 [Network Repository](http://networkrepository.com/)
 
 [Open Graph Benchmark](https://ogb.stanford.edu/), [ogb paper](https://arxiv.org/pdf/2005.00687.pdf)
 
-## Books and courses
+[TUDataset](https://chrsmrrs.github.io/datasets/)
+
+[Relational dataset repository](https://relational.fit.cvut.cz/)
+
+## Books, courses and resources
 
 [Network science – Albert-Laszlo Barabasi](http://networksciencebook.com/)
 
@@ -42,6 +47,8 @@ Stanford course cs224w -- Big recommendation
 [Networks, Crowds, and Markets: Reasoning About a Highly Connected World -- By David Easley and Jon Kleinberg)](http://www.cs.cornell.edu/home/kleinber/networks-book/)
 
 [GNNPapers](https://github.com/thunlp/GNNPapers#survey-papers)
+
+[Pytorch Geometric Tutorial](https://github.com/AntonioLonga/PytorchGeometricTutorial)
 
 **Note**  
 Most photos are taken from the above resources or the extra resources linked in the notebooks
