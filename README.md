@@ -2,7 +2,7 @@
 
 **Note**
 - [nbviewer](https://nbviewer.jupyter.org/github/zademn/netsci-labs/tree/master/) might have prettier math and image rendering than github
-- Photos are taken from the resources (most of them from cs224w and Graph representation learning – William hamilton 2020) or the extra resources linked in the notebooks.
+- Photos are taken from the resources (most of them from Stanford's cs224w and Graph representation learning – William Hamilton 2020) or the extra resources linked in the notebooks.
 
 ## Prerequisites 
 
@@ -41,7 +41,7 @@ Stanford course cs224w -- Big recommendation
 
 [A course in network science](http://www.leonidzhukov.net/hse/2021/networks/)
 
-[Graph representation learning – William hamilton 2020](https://www.cs.mcgill.ca/~wlh/grl_book/)
+[Graph representation learning – William Hamilton 2020](https://www.cs.mcgill.ca/~wlh/grl_book/)
 
 [A new kind of science – Stephen Wolfram](https://www.wolframscience.com/nks/)
 
