@@ -58,6 +58,7 @@ Stanford course cs224w -- Big recommendation
 ## TODO 
 Stuff that I need to finish (not exhaustive)
 - [ ] Add some real world intuition
+- [ ] install links for jupyter colab
 - [x] Finish probabilities recap
 - [x] Add markov chains to probabilities recap
 - [ ] Random walk with stochastic matrices
