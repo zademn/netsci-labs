@@ -19,6 +19,10 @@ Either make an anaconda env or a venv and install the requirements (Please do th
 
 Some of the used libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
 
+## Colab links
+1. Tutorial
+- Linear algebra [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zademn/netsci-labs/blob/master/Lab1-Intro/Linalg_recap.ipynb)
+- networkx tutorial [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zademn/netsci-labs/blob/master/Lab1-Intro/networkx_tutorial_short.ipynb)
 ## Datasets
 
 [Stanford's Snap](http://snap.stanford.edu/data/index.html)
