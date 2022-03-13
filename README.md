@@ -56,6 +56,7 @@ Some of the used libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geomet
 Stanford course cs224w -- Big recommendation
 - [yt playlist - Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
 - [stanford cs224w – Jure Leskovec](https://web.stanford.edu/class/cs224w/)
+- [Related tutorials](https://medium.com/stanford-cs224w)
 
 [A course in network science](http://www.leonidzhukov.net/hse/2021/networks/)
 
