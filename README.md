@@ -47,6 +47,8 @@ Some of the used libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geomet
 
 [Relational dataset repository](https://relational.fit.cvut.cz/)
 
+[moleculenet](https://moleculenet.org/datasets-1)
+
 ## Books, courses and more resources
 
 [Network science – Albert-Laszlo Barabasi](http://networksciencebook.com/)

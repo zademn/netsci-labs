@@ -145,3 +145,5 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/python
 */tmp*
 test.py
+test.txt
+readme_colab_links.py
