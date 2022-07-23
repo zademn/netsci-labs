@@ -60,6 +60,8 @@ Stanford course cs224w -- Big recommendation
 
 [Graph representation learning – William Hamilton 2020](https://www.cs.mcgill.ca/~wlh/grl_book/)
 
+[GNN Book](https://graph-neural-networks.github.io/index.html)
+
 [A new kind of science – Stephen Wolfram](https://www.wolframscience.com/nks/)
 
 [Networks, Crowds, and Markets: Reasoning About a Highly Connected World -- By David Easley and Jon Kleinberg)](http://www.cs.cornell.edu/home/kleinber/networks-book/)
