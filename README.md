@@ -17,8 +17,6 @@ Part 2 -- ML on graphs -- Embeddings, Classification, GNNs
 ## Environment
 Either make an anaconda env or a venv and install the requirements (Please do this before the lab)
 
-Some of the used libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
-
 ## Colab links
 
 | Lab  	| Link 	|
