@@ -147,5 +147,5 @@ cython_debug/
 test.py
 test.txt
 readme_colab_links.py
-
 LabsExtra/
+.vscode/

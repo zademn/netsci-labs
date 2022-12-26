@@ -17,8 +17,6 @@ Part 2 -- ML on graphs -- Embeddings, Classification, GNNs
 ## Environment
 Either make an anaconda env or a venv and install the requirements (Please do this before the lab)
 
-Some of the used libraries: `networkx`, `karateclub`, `pytorch`, `pytorch_geometric`
-
 ## Colab links
 
 | Lab  	| Link 	|
@@ -61,6 +59,8 @@ Stanford course cs224w -- Big recommendation
 [A course in network science](http://www.leonidzhukov.net/hse/2021/networks/)
 
 [Graph representation learning – William Hamilton 2020](https://www.cs.mcgill.ca/~wlh/grl_book/)
+
+[GNN Book](https://graph-neural-networks.github.io/index.html)
 
 [A new kind of science – Stephen Wolfram](https://www.wolframscience.com/nks/)
 
