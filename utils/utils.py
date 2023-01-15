@@ -196,7 +196,7 @@ def load_graph(name: str) -> nx.Graph:
         download_url = "https://nrvis.com/download/data/power/power-US-Grid.zip"
         res = requests.get(download_url)  # Download
         zf = zipfile.ZipFile(io.BytesIO(res.content))  # zipfile from downloaded content
-        G = nx.from_scipy_sparse_matrix(
+        G = nx.from_scipy_sparse_array(
             mmread(zf.open("power-US-Grid.mtx"))
         )  # open the file pointer and mmread.
 
