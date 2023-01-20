@@ -1,4 +1,4 @@
-# Network science 2021
+# Network science 20213
 
 **Note**
 - [nbviewer](https://nbviewer.jupyter.org/github/zademn/netsci-labs/tree/master/) might have prettier math and image rendering than github
@@ -7,7 +7,7 @@
 ## Prerequisites 
 
 1. Programming: OOP, being able to read and change functions to do something else.
-2. Some math: Probabilities, statistics and linear algebra
+2. Math: Probabilities, statistics and linear algebra
 3. Graph theory – data structures
 
 ## Split  
@@ -73,8 +73,3 @@ Stanford course cs224w -- Big recommendation
 ### Articles
 - https://distill.pub/2021/gnn-intro/
 - https://distill.pub/2021/understanding-gnns/
-
-## TODO 
-Stuff that I need to finish (not exhaustive)
-- [ ] install links for jupyter colab
-
