@@ -1,4 +1,4 @@
-# Network science 20213
+# Network science 2023
 
 **Note**
 - [nbviewer](https://nbviewer.jupyter.org/github/zademn/netsci-labs/tree/master/) might have prettier math and image rendering than github
