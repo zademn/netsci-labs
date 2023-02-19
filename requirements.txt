@@ -5,7 +5,5 @@ networkx
 scikit-learn
 jupyterlab
 tqdm
-karateclub
-python-louvain
 umap-learn
 einops
