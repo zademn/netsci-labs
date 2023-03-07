@@ -199,6 +199,8 @@ def load_graph(name: str) -> nx.Graph:
         G = nx.from_scipy_sparse_array(
             mmread(zf.open("power-US-Grid.mtx"))
         )  # open the file pointer and mmread.
+        node_map = {u: int(u) for u in G.nodes}
+        G = nx.relabel_nodes(G, node_map, copy = True)
 
         return G
 
