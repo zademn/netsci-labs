@@ -7,3 +7,4 @@ jupyterlab
 tqdm
 umap-learn
 einops
+pandas
