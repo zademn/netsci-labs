@@ -43,9 +43,13 @@ Either make an anaconda env or a venv and install the requirements (Please do th
 
 [TUDataset](https://chrsmrrs.github.io/datasets/)
 
+[PyG datasets](https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html)
+
 [Relational dataset repository](https://relational.fit.cvut.cz/)
 
 [moleculenet](https://moleculenet.org/datasets-1)
+
+[House Of graphs](https://houseofgraphs.org/)
 
 ## Books, courses and more resources
 
