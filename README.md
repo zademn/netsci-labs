@@ -53,12 +53,13 @@ Either make an anaconda env or a venv and install the requirements (Please do th
 
 ## Books, courses and more resources
 
-[Network science – Albert-Laszlo Barabasi](http://networksciencebook.com/)
-
 Stanford course cs224w -- Big recommendation
-- [youtube playlist - Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
-- [stanford cs224w – Jure Leskovec](https://web.stanford.edu/class/cs224w/)
+- [youtube playlist 2021](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
+- [youtube playlist 2023 (incomplete)](https://www.youtube.com/watch?v=ZfK4FDk9uy8&list=PL1P-b6dnGy54GDzcllzubF3pKHU4TN1Q7&index=1&t=1s)
+- [Website](https://web.stanford.edu/class/cs224w/)
 - [Related tutorials](https://medium.com/stanford-cs224w)
+
+[Network science – Albert-Laszlo Barabasi](http://networksciencebook.com/)
 
 [The atlas of the aspiring network scientist](https://www.networkatlas.eu/index.htm)
 
