@@ -56,15 +56,15 @@ Either make an anaconda env or a venv and install the requirements (Please do th
 [Network science – Albert-Laszlo Barabasi](http://networksciencebook.com/)
 
 Stanford course cs224w -- Big recommendation
-- [yt playlist - Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
+- [youtube playlist - Jure Leskovec](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
 - [stanford cs224w – Jure Leskovec](https://web.stanford.edu/class/cs224w/)
 - [Related tutorials](https://medium.com/stanford-cs224w)
+
+[The atlas of the aspiring network scientist](https://www.networkatlas.eu/index.htm)
 
 [A course in network science](http://www.leonidzhukov.net/hse/2021/networks/)
 
 [Graph representation learning – William Hamilton 2020](https://www.cs.mcgill.ca/~wlh/grl_book/)
-
-[The atlas of the aspiring network scientist](https://www.networkatlas.eu/index.htm)
 
 [GNN Book](https://graph-neural-networks.github.io/index.html)
 
