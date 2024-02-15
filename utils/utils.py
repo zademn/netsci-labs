@@ -1,15 +1,16 @@
+from typing import Any, List
 import networkx as nx
 import numpy as np
 import itertools
-import os
-import urllib.request
 import io
 import zipfile
 import pandas as pd
 import requests
 import gzip
 from scipy.io import mmread
-
+from six.moves import urllib
+from scipy.sparse import coo_matrix
+from joblib import Parallel, delayed
 
 def average_shortest_path_length_sampled(G: nx.Graph, n_samples: int = 500) -> float:
     """
@@ -219,3 +220,108 @@ def load_graph(name: str) -> nx.Graph:
 
     else:
         raise ValueError("Graph not found")
+
+# From https://github.com/benedekrozemberczki/karateclub/blob/d750b33e8faaeb95ac2ed6d6ed4f0b470bd506ce/karateclub/dataset/dataset_reader.py#L12
+class GraphReader(object):
+    r"""Class to read benchmark datasets for the community detection or node embedding task.
+
+    Args:
+        dataset (str): Dataset of interest, one of:
+            (:obj:`"facebook"`, :obj:`"twitch"`, :obj:`"wikipedia"`, :obj:`"github"`, :obj:`"lastfm"`, :obj:`"deezer"`). Default is 'wikipedia'.
+    """
+
+    def __init__(self, dataset: str = "wikipedia"):
+        assert dataset in [
+            "wikipedia",
+            "twitch",
+            "github",
+            "facebook",
+            "lastfm",
+            "deezer",
+        ], "Wrong dataset."
+        self.dataset = dataset
+        self.base_url = "https://github.com/benedekrozemberczki/karateclub/raw/master/dataset/node_level/"
+
+    def _pandas_reader(self, bytes):
+        """
+        Reading bytes as a Pandas dataframe.
+        """
+        tab = pd.read_csv(
+            io.BytesIO(bytes), encoding="utf8", sep=",", dtype={"switch": np.int32}
+        )
+        return tab
+
+    def _dataset_reader(self, end):
+        """
+        Reading the dataset from the web.
+        """
+        path = self.base_url + self.dataset + "/" + end
+        data = urllib.request.urlopen(path).read()
+        data = self._pandas_reader(data)
+        return data
+
+    def get_graph(self) -> nx.classes.graph.Graph:
+        r"""Getting the graph.
+
+        Return types:
+            * **graph** *(NetworkX graph)* - Graph of interest.
+        """
+        data = self._dataset_reader("edges.csv")
+        graph = nx.convert_matrix.from_pandas_edgelist(data, "id_1", "id_2")
+        return graph
+
+    def get_features(self) -> coo_matrix:
+        r"""Getting the node features Scipy matrix.
+
+        Return types:
+            * **features** *(COO Scipy array)* - Node feature matrix.
+        """
+        data = self._dataset_reader("features.csv")
+        row = np.array(data["node_id"])
+        col = np.array(data["feature_id"])
+        values = np.array(data["value"])
+        node_count = max(row) + 1
+        feature_count = max(col) + 1
+        shape = (node_count, feature_count)
+        features = coo_matrix((values, (row, col)), shape=shape)
+        return features
+
+    def get_target(self) -> np.array:
+        r"""Getting the class membership of nodes.
+
+        Return types:
+            * **target** *(Numpy array)* - Class membership vector.
+        """
+        data = self._dataset_reader("target.csv")
+        target = np.array(data["target"])
+        return target
+    
+
+def walk_node(graph: nx.Graph, node: Any, walk_length: int) -> List[Any]:
+    """Given a graph, a node and a walk_length, walks the graph starting from that node"""
+    # Add the initial node to the walk
+    walk = [node]
+
+    for _ in range(walk_length - 1):
+        # Pick neighbours from the last node in the walk
+        neighbours = list(graph.neighbors(walk[-1]))
+        # If the node has neighbours, sample and add to the walk
+        if len(neighbours) > 0:
+            next_node = np.random.choice(neighbours)
+            walk.append(next_node)
+    return walk
+
+
+def walk_graph(
+    graph: nx.Graph, walks_per_node: int, walk_length: int
+) -> List[List[Any]]:
+    """Given a graph, how many walks_per_node and the walk_length, for each node do
+    walks_per_node walks of length walk_length starting from it. Add the walk to a list
+    and return it"""
+    walks = []
+    # For each node, do `walks_per_node` random walks
+    for node in graph.nodes():
+        for _ in range(walks_per_node):
+            walk = walk_node(graph, node, walk_length)
+            walks.append(walk)
+    return walks
