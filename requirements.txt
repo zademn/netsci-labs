@@ -3,8 +3,11 @@ numpy
 matplotlib
 networkx
 scikit-learn
-jupyterlab
 tqdm
 umap-learn
 einops
 pandas
+ipython
+ipywidgets
+pyvis
+gensim
