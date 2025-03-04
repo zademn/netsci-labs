@@ -149,3 +149,8 @@ test.txt
 readme_colab_links.py
 LabsExtra/
 .vscode/
+
+# pixi environments
+.pixi
+*.egg-info
+pixi.lock

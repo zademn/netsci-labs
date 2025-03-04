@@ -4,10 +4,12 @@ matplotlib
 networkx
 scikit-learn
 tqdm
-umap-learn
 einops
 pandas
 ipython
 ipywidgets
+ipykernel
 pyvis
 gensim
+ruff
+requests

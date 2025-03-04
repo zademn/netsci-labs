@@ -12,6 +12,7 @@ from six.moves import urllib
 from scipy.sparse import coo_matrix
 from joblib import Parallel, delayed
 
+
 def average_shortest_path_length_sampled(G: nx.Graph, n_samples: int = 500) -> float:
     """
     Return the average shortest path length of a graph
@@ -197,11 +198,9 @@ def load_graph(name: str) -> nx.Graph:
         download_url = "https://nrvis.com/download/data/power/power-US-Grid.zip"
         res = requests.get(download_url)  # Download
         zf = zipfile.ZipFile(io.BytesIO(res.content))  # zipfile from downloaded content
-        G = nx.from_scipy_sparse_array(
-            mmread(zf.open("power-US-Grid.mtx"))
-        )  # open the file pointer and mmread.
+        G = nx.from_scipy_sparse_array(mmread(zf.open("power-US-Grid.mtx")))  # open the file pointer and mmread.
         node_map = {u: int(u) for u in G.nodes}
-        G = nx.relabel_nodes(G, node_map, copy = True)
+        G = nx.relabel_nodes(G, node_map, copy=True)
 
         return G
 
@@ -220,6 +219,7 @@ def load_graph(name: str) -> nx.Graph:
 
     else:
         raise ValueError("Graph not found")
+
 
 # From https://github.com/benedekrozemberczki/karateclub/blob/d750b33e8faaeb95ac2ed6d6ed4f0b470bd506ce/karateclub/dataset/dataset_reader.py#L12
 class GraphReader(object):
@@ -246,9 +246,7 @@ class GraphReader(object):
         """
         Reading bytes as a Pandas dataframe.
         """
-        tab = pd.read_csv(
-            io.BytesIO(bytes), encoding="utf8", sep=",", dtype={"switch": np.int32}
-        )
+        tab = pd.read_csv(io.BytesIO(bytes), encoding="utf8", sep=",", dtype={"switch": np.int32})
         return tab
 
     def _dataset_reader(self, end):
@@ -295,7 +293,7 @@ class GraphReader(object):
         data = self._dataset_reader("target.csv")
         target = np.array(data["target"])
         return target
-    
+
 
 def walk_node(graph: nx.Graph, node: Any, walk_length: int) -> List[Any]:
     """Given a graph, a node and a walk_length, walks the graph starting from that node"""
@@ -312,9 +310,7 @@ def walk_node(graph: nx.Graph, node: Any, walk_length: int) -> List[Any]:
     return walk
 
 
-def walk_graph(
-    graph: nx.Graph, walks_per_node: int, walk_length: int
-) -> List[List[Any]]:
+def walk_graph(graph: nx.Graph, walks_per_node: int, walk_length: int) -> List[List[Any]]:
     """Given a graph, how many walks_per_node and the walk_length, for each node do
     walks_per_node walks of length walk_length starting from it. Add the walk to a list
     and return it"""

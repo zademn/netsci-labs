@@ -1,0 +1,62 @@
+[project]
+authors = ["dacian-dataheroes <dacian@dataheroes.ai>"]
+channels = ["conda-forge"]
+name = "netsci-labs"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[system-requirements]
+cuda = "12.4"
+
+[tasks]
+
+[dependencies]
+python = ">=3.11, <3.13"
+pip = ">=23.0.0,<26"
+
+[pypi-dependencies]
+black = {version = "*", extras = ["jupyter"]}
+ipynb = ">=0.5.1, <0.6"
+nbformat = ">=5.10.4, <6"
+darker = "*"
+
+[feature.ic2025.dependencies]
+python = ">=3.12.1"
+# Gensim requires lower numpy, scipy
+scipy = ">=1.15.0"
+numpy = ">=2.0.0"
+matplotlib = "*"
+pandas = "*"
+ipython = "<9.0.0"
+pytorch-gpu = ">=2.6.0,<3"
+torchvision = ">=0.21.0,<0.22"
+torchinfo = "*"
+scikit-learn = ">=1.6.1,<2"
+umap-learn = ">=0.5.7,<0.6"
+
+[feature.ic2025.pypi-options]
+index-url = "https://pypi.org/simple"
+find-links = [
+    {url = "https://data.pyg.org/whl/torch-2.5.0+cu124.html"},
+    {url = "https://download.pytorch.org/whl/torchvision/"},
+    {url = "https://download.pytorch.org/whl/torch/"},
+]
+
+[feature.ic2025.pypi-dependencies]
+networkx = ">=3.4.2, <4"
+tqdm = "*"
+einops = "*"
+ipywidgets = ">=8.1.5, <9"
+pyvis = "*"
+# gensim = ">=4.3.2, <5"
+ipykernel = ">=6.29.5, <7"
+ruff = ">=0.9.7, <0.10"
+requests = ">=2.32.3, <3"
+torch_geometric = "*"
+torch_scatter = "*"
+torch_sparse = "*"
+torch_cluster = "*"
+torch_spline_conv = "*"
+
+[environments]
+ic2025 = ["ic2025"]
